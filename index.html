@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Certificate Generator</title>
+</head>
+<body>
+<div class="container">
+        <div class="container-child1">
+            <h1>Certificate Generator</h1>
+            <p>Type your name and click the download button below to get your Certificate.</p>
+                <div class="input">
+                    <label>
+                        
+                        <div class="label-container">
+                            
+                            <div class="input-background"><span>NAME: </span><input id="name" type="text" placeholder="Enter your name"><br></div>
+                            <button onClick="clear_canvas()" type="button" class="clear-btn">Clear</button>
+                        </div>
+                    </label>
+                    
+                </div>
+        </div>
+        <button class="download-btn" type="button"><a href="#" id="download-btn">Download</a></button>
+</div>
+    <div class="container2">
+        <canvas id="canvas" height="700px" width="1000px"></canvas>
+    </div>
+<script src="app.js"></script>
+
+</body>
+</html>

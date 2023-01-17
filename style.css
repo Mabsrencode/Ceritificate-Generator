@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    display: flex;
+    background-image: linear-gradient(to right, #7DE5ED, #4649FF);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+input{
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label-container input{
+    width: 20vw;
+}
+.container {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .container-child1 p{
+    min-width: 30vw;
+    font-family: 'roboto', sans-serif;
+}
+.container-child1{
+    background-color: rgba(255, 255, 255, 0.4 );
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px #666666;
+}
+.container2{
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    font-size: 4rem;
+}
+.container h1, span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.container button a{
+    font-weight: 700;
+}
+.input{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    text-align: center;
+}
+canvas{
+    cursor: crosshair;
+}
+button{
+    border: none;
+    background: none;
+    background-color: #4649FF;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: 'roboto', sans-serif;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #1c1e87;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.input-background{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #666666;
+}
+input, span{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1366px){
+    
+    body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 10rem;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    p{
+        width: 100%;
+    }
+    .container2{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input, span{
+        font-size: 1rem;
+    }
+    input{
+        min-width: 50vw;
+    }
+    canvas{
+        height: 500px;
+        width: 800px;
+    }
+}
